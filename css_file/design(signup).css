@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    background: url(../image/wallpaper.jpg) no-repeat;
+    background-size: cover;
+}
+
+/*Header*/
+header{
+    background-color: black;
+ }
+
+ .headinglogo{
+    height: auto;
+    width: 150px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Nav Bar*/
+.nav-icon {
+    display: none;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    justify-content: left;
+}
+    
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color:grey;
+    overflow: hidden;
+}
+
+.navbar a{
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.navbar a:hover{
+    color: black;
+}
+   
+.icon{
+   position: absolute;
+   right: 0px;
+}
+
+.bag{
+    position: absolute;
+    right: 80px;
+}
+
+.fa-user{
+   position: absolute;
+   right: 0px;
+   margin-right: 65px;
+}
+
+.nav-container{
+    position: relative;
+    width: auto;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    max-width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.overlay-content a {
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.overlay-content a:hover {
+    color: #f1f1f1;
+}
+
+.overlay.active {
+    width: 100%;
+}
+
+.overlay.active .overlay-content {
+    opacity: 1;
+}
+
+.position{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.signup-container{
+    position: relative;
+    margin-top: 100px;
+    width: 450px;
+    height: auto;
+    background: #dedede;
+    border-radius: 5px;
+}
+
+.label{
+    padding:20px 150px;
+    font-size:35px;
+    font-weight: 400;
+    color:black;
+    font-family: 'Prata',sans-serif;
+}
+
+.signup-form{
+    padding: 20px 40px;
+    font-family: Barlow,sans-serif;
+}
+
+.signup-form .font{
+    font-size:18px;
+    margin: 5px 0;
+}
+
+.signup-form input {
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline:none;
+    border: 1px solid silver;
+    font-family: Barlow,sans-serif;
+}
+
+.signup-form .font2{
+    margin-top: 30px;
+
+}
+
+.signup-form button{
+    margin-top: 45px ;
+    margin-bottom: 20px;
+    height: 45px;
+    width:365px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: rgb(51, 50, 50);
+    border-radius: 3px;
+    border: 1px solid black ;
+    transform: .5s;
+}
+
+.signup-form button:hover{
+    background: black;
+}
+
+.signup-form #email-error,
+.signup-form #pass-error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color: #c62828;
+    background:rgba(255,0,0,0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #ef9a9a;
+    display: none;
+}
+
+.end-container{
+    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background-color: lightgrey;
+    height: auto;
+    font-family: Barlow,sans-serif;
+    position: relative;
+}
+
+.end-container li{
+    padding-bottom: 20px;
+}
+
+.list-style{
+    width: 15%;
+    list-style-type: none;
+    margin-left: 40px;  
+    padding-bottom: 80px;
+}
+
+.list-style a{
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.list-style a:hover{
+    color: #abb8c3;
+    cursor: pointer;
+}
+
+.facebooklogo{
+    position: absolute;
+    top:9px;
+    right: 18px;
+}
+
+.instalogo{
+    position: absolute;
+    top:9px;
+    right: 40px;
+}
+
+.footer-container{
+    position: relative;
+    width: 100%;
+}
+
+.payment-container{
+    width: 150px;
+    position: absolute;
+    max-width: 100%;
+}
+
+.payment-logo{
+    width: 95%;
+    max-width: 100%;
+    height: auto;
+    padding-left: 10px;
+}
+
+.copyright-container{
+    position: absolute;
+    width: 400px;
+    right: 20px;
+}
+
+.copyright-text{
+    font-family:Barlow,sans-serif;
+}
+
+.date-container{
+    padding-top: 20px; 
+    font-size: 10pt;
+    font-family: Barlow,sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+.nav-container{
+    background-color: grey;
+}
+.navbar a {
+    display: none;
+}
+
+.nav-icon {
+    display: block;
+}
+
+.label{
+    padding:20px 100px;
+}
+
+.signup-container{
+    margin-top: 50px;
+    width: 350px;
+}
+.signup-form{
+    padding: 20px 20px ;
+}
+
+.signup-form input {
+    width: 300px;
+    padding: 0 10px;
+}
+
+.signup-form button{
+    width:300px;
+}
+
+.end-container{
+    clear: both;
+    margin-bottom: 0;
+}
+
+.list-style{
+    width: 100%;
+}
+
+.footer-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.payment-container{
+    width: 40%;
+    height: auto;
+    position: absolute;
+}
+
+.copyright-container{
+    width: 50%;
+    font-size: 10pt;
+    height: auto;
+    position: absolute; 
+}
+
+.date-container{
+    width: 46%;
+    padding-top: 20px;
+    position: absolute;
+}
+}
