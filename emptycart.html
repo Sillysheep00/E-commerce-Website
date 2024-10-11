@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cart | CY Patisserie</title>
+    <link rel="stylesheet" href="./css_file/design(cart).css">
+    <link rel="icon" type="image/x-icon" href="./image/weblogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><img src="./image/weblogo(bigsize).png"class="headinglogo"></header>
+        <div class="nav-container">
+            <div class="navbar"> 
+                <a href="./home.html">HOME</a>
+                <a href="./aboutus.html">ABOUT US</a>
+                <a href="./product.html">PRODUCTS</a>
+                <a href="./contactus.html">CONTACT US</a>
+                <a class="icon" href="./login.html" > <i class="fa-solid fa-user" style="color: #161718;"></i> LOGIN</a>
+                <a class="bag" href="./emptycart.html"> <i class="fa-solid fa-bag-shopping" style="color: #121417;"></i></a>
+            </div>
+
+            <div class="nav-icon" onclick="openNav()">&#9776;</div>
+
+            <div id="overlay-nav" class="overlay">
+                <div class="overlay-content">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+                    <a href="./home.html">HOME</a>
+                    <a href="./aboutus.html">ABOUT US</a>
+                    <a href="./product.html">PRODUCTS</a>
+                    <a href="./contactus.html">CONTACT US</a>
+                    <a href="./login.html">LOGIN</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1 class="text">Empty cart ):</h1>
+        </div>
+
+
+        <div class="end-container" style="clear: right;" >
+            <div style="text-align: center;">
+                ...Say Hi To Us...
+                <i class="fa-brands fa-instagram instalogo" style="color: #111318;"></i>
+                <i class="fa-brands fa-facebook facebooklogo" style="color: #131416;" ></i>
+            </div>
+            
+            <ul class="list-style">
+                <a href="./faq.html"><li>FAQ</li></a>
+                <a href="./privacy.html"><li>Privacy Policy</li></a>
+                <a href="./termofservice.html"><li>Term of Services</li></a>
+                <a href="./contactus.html"><li>Contact Us</li></a>
+            </ul>
+
+        </div>
+
+        <footer class="footer-container">
+            <div class="payment-container">
+                <div class="payment-logo">
+                    <img src="./image/visapaylogo.jpg" style="height: 1em;" >
+                    <img src="./image/boostpaylogo.png" style="height: 1em;">
+                    <img src="./image/tnglogo.jpg" style="height: 1em;">
+                </div>
+                
+            </div>
+
+            <div class="copyright-container">
+                <p class="copyright-text">&copy; 2023 CY Patisserie Sdn Bhd. All Rights Reserved</p>
+            </div>
+
+            <div class="date-container">
+                <p>
+                    Created on: November 27,2023 <br>
+                    Last Updated On: Novemeber 28,2023 <br>
+                    Data Collection Date: December 12,2023
+                </p>
+              
+            </div>
+        </footer>
+        <script>
+            function openNav() {
+            document.getElementById("overlay-nav").classList.add("active");
+            }
+  
+            function closeNav() {
+             document.getElementById("overlay-nav").classList.remove("active");
+             }
+        </script>
+</body>
+</html>
